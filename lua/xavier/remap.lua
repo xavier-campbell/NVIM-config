@@ -68,3 +68,8 @@ vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "vertical split" })
 vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "horizontal split" })
 vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "equalize splits" })
 vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "close split" })
+
+-- Format js, jsx, ts, tsx files
+vim.keymap.set("n", "<leader>bf", function()
+  require("conform").format({ async = true })
+end, { desc = "Biome format" })

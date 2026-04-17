@@ -57,4 +57,4 @@ vim.opt.updatetime = 250
 --vim.opt.colorcolumn = "80"
 
 -- Syncs os and neovim clipboard
-vim.opt.clipboard:append("unnamedplus")
+--vim.opt.clipboard:append("unnamedplus")
